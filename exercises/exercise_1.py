@@ -12,3 +12,5 @@ elif ageTatyana > ageAlex:
 
 else:
   output = 'Alex and Tatyana are of the same age.'
+
+print(output)

@@ -35,6 +35,6 @@ elif 29 <= userInput <= 36:
     output = 'red'
 
 else:
-  print('Invalid')
+  print('The bet will not play!')
 
 print(output)

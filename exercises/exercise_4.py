@@ -4,7 +4,7 @@ userInput = int(input("Enter your grade: "))
 
 output = ''
 if 1 <= userInput <= 3:
-  output = 'initital level'
+  output = 'initial level'
 
 elif 4 <= userInput <= 6:
   output = 'average level'

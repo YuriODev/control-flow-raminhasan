@@ -1,35 +1,25 @@
 # Your solution to Exercise 5
 import math
 
-a = int(input())
-b = int(input())
-c = int(input())
+a = float(input())
+b = float(input())
+c = float(input())
 
-root1 = ''
-root2 = ''
+D = (b ** 2) - 4 * a * c
 
-try:
-  sol1 = (-1 * b + math.sqrt((b^2) - 4 * a * c) / 2 * a )
-  root1 = sol1
+if a == 0 and b == 0 and c == 0:
+  print("Infinite roots.")
 
-except ValueError:
-  root1 = False
+elif a == 0 and b == 0 and c != 0:
+  print("No roots.")
 
-try:
-  sol2 = (-1 * b - math.sqrt((b^2) - 4 * a * c) / 2 * a )
-  root2 = sol2
+elif a == 0 and b != 0 and c != 0:
+  solution = -1 * c / b
+  print(solution)
 
-except ValueError:
-  root2 = False
+elif a != 0 and b == 0:
+  sol1 = 0
+  sol2 = math.sqrt(-1 * c / a)
+  print(f'{sol1} and {sol2}')
 
-if root1 != False and root2 != False:
-  print(f'{root1} and {root2}')
 
-elif root1 == root2 != False:
-  print(f'{root1}')
-
-elif not root1 and not root2:
-  print('No roots.')
-
-else:
-  print('Infinite roots.')

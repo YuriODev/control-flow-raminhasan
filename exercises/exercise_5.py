@@ -36,3 +36,6 @@ elif D != 0:
 elif D == 0:
   sol = (-1 * b) / (2 * a)
   print(sol)
+
+else:
+  print('No solutions')

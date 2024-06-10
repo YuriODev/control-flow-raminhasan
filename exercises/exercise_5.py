@@ -5,8 +5,6 @@ a = float(input())
 b = float(input())
 c = float(input())
 
-D = (b ** 2) - 4 * a * c
-
 if a == 0:
     if b == 0 and c == 0:
       print("Infinite roots.")
@@ -29,6 +27,7 @@ elif c == 0:
   print(f'{sol1} and {sol2}')
 
 elif D != 0:
+  D = (b ** 2) - 4 * a * c
   sol1 = ((-1 * b) + math.sqrt(D)) / (2 * a)
   sol2 = ((-1 * b) - math.sqrt(D)) / (2 * a)
   print(f'{sol1} and {sol2}')

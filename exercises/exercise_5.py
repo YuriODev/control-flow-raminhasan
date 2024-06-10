@@ -22,4 +22,16 @@ elif a != 0 and b == 0:
   sol2 = math.sqrt(-1 * c / a)
   print(f'{sol1} and {sol2}')
 
+elif c == 0:
+  sol1 = 0
+  sol2 = (-1 * b) / a
+  print(f'{sol1} and {sol2}')
 
+elif D != 0:
+  sol1 = ((-1 * b) + math.sqrt(D)) / (2 * a)
+  sol2 = ((-1 * b) - math.sqrt(D)) / (2 * a)
+  print(f'{sol1} and {sol2}')
+
+elif D == 0:
+  sol = (-1 * b) / (2 * a)
+  print(sol)

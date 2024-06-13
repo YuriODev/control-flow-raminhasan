@@ -2,8 +2,10 @@
 
 userInput = input()
 
-searchList = userInput[0:2]
+searchList = userInput[0:3]
 searchItem = userInput[-1]
+
+print(searchList, searchItem)
 
 if searchItem in searchList:
   print("True")

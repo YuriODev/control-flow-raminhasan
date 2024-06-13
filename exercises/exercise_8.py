@@ -1,14 +1,8 @@
 # Your solution to Exercise 8
 
-userInput = input()
+userInput = int(input())
+checkDigit = int(input())
 
-searchList = userInput[0:3]
-searchItem = userInput[-1]
+inDigit = checkDigit == userInput % 10 or checkDigit == (userInput // 10) % 10 or checkDigit == userInput // 100
 
-print(searchList, searchItem)
-
-if searchItem in searchList:
-  print("True")
-
-else:
-  print("False")
+print(inDigit)

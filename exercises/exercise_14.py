@@ -1,10 +1,14 @@
-# Your solution to Exercise 14
+# Input: A four-digit number
+number = int(input("Enter a four-digit number: "))
 
-num = input()
-first_char = len(num)
+# Extract digits
+thousands = number // 1000
+hundreds = (number % 1000) // 100
+tens = (number % 100) // 10
+ones = number % 10
 
-if num[-1:-first_char] == num:
-  print("True")
+# Check if the number is a palindrome
+is_palindrome = (thousands == ones) and (hundreds == tens)
 
-else:
-  print("False")
+# Output the result
+print(is_palindrome)

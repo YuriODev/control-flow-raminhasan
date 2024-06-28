@@ -60,5 +60,5 @@ elif month == 12:
 else:
   output = 'Invalid date'
 
-if output = '':
+if output == '':
   print(f'{day}.{month}.{year}')

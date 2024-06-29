@@ -19,7 +19,7 @@ if month == 3:
   else:
     output = 'Invalid date'
 
-elif month == 4 or month == 6 or month == 8 or month == 9 or month == 11:
+elif month == 2 or month == 4 or month == 6 or month == 8 or month == 9 or month == 11:
   if day == 3:
     day = 31
     month -= 1
